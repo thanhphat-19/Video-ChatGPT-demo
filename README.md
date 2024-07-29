@@ -13,6 +13,7 @@ conda activate video_chatgpt
 ```
 
 ```shell
+git clone https://github.com/thanhphat-19/Video-ChatGPT-demo.git
 cd Video-ChatGPT
 pip install -r requirements.txt
 export PYTHONPATH="./:$PYTHONPATH"
@@ -20,7 +21,7 @@ export PYTHONPATH="./:$PYTHONPATH"
 
 ### Install GIT lFS
 ```shell
-git lfs install
+sudo apt-get install git-lfs
 ```
 
 ### Access Token Huggingface to Download The Model
@@ -41,13 +42,7 @@ git clone https://huggingface.co/mmaaz60/LLaVA-7B-Lightening-v1-1
 ```shell
 git clone https://huggingface.co/MBZUAI/Video-ChatGPT-7B
 ```
-
-### Download sample videos
-
-Download the sample videos to test the demo from [this link](https://mbzuaiac-my.sharepoint.com/:u:/g/personal/hanoona_bangalath_mbzuai_ac_ae/Ef0AGw50jt1OrclpYYUdTegBzejbvS2-FXBCoM3qPQexTQ?e=TdnRUG)
-and place them in `video_chatgpt/demo_sample_videos` directory.
-
-### Run the Demo
+### Run the Gradio Application
 
 ```shell
 python video_chatgpt/demo/video_demo.py         
